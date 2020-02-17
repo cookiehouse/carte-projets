@@ -31,7 +31,7 @@ class ProjectMap {
       // For each project create a project marker
       const projectMarker = new ProjectMarker(project);
       // If the project type has not been seen in the loop before
-      if (typeof groups[project.name] === 'undefined') {
+      if (typeof groups[project.type] === 'undefined') {
         // Create an empty list of markers for the project type
         groups[project.type] = [];
       }
@@ -90,7 +90,7 @@ class ProjectMap {
   removeTileLayer(name: string): ProjectMap {
     // Remove a Tile layer from the map by its given name during creation
     this.controlLayers.removeLayer(this.tileLayers[name]);
-    delete this.tileLayers.name;
+    delete this.tileLayers[name];
     return this;
   }
 }
