@@ -1,0 +1,9 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+.title {
+  @apply text-blue-800 bg-green-100;
+}
+
+@import 'tailwindcss/utilities';

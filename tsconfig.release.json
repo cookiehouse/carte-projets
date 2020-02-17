@@ -3,11 +3,7 @@
     // Extend configuration defined in tsconfig.json
 	"extends": "./tsconfig.json",
 	"compilerOptions": {
-	  "rootDir": ".",
       "outDir": "./vendor",
       "removeComments": true,
 	},
-	"include": [
-	  "src/**/*"
-	]
 }

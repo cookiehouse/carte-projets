@@ -1,14 +1,19 @@
-import ProjectMarker from "../src/entities/project_marker";
+/**
+ * @jest-environment jsdom
+ */
+import ProjectMarker from "../src/entities/ProjectMarker";
 
 describe('ProjectMarker test', () => {
   // This function test that a project marker can be instantiated with required arguments
 	it('should be able to create a ProjectMarker', () => {
-		const testProjectMarker = new ProjectMarker({
+		const testProjectMarker: ProjectMarker = new ProjectMarker({
             name: "test",
             country: "France",
             type: "Information",
             ref: "https://www.culture-developpement.asso.fr/accueil/conference-migration-et-cultures-droit-citoyennete-et-diversite/",
-            start: 2017,            
+            start: 2017,
+            latitude: 48.853958,
+            longitude: 2.357206,         
         });
 		expect(testProjectMarker.project.name).toBe('test');
     });
@@ -19,7 +24,9 @@ describe('ProjectMarker test', () => {
             country: "France",
             type: "Information",
             ref: "https://www.culture-developpement.asso.fr/accueil/conference-migration-et-cultures-droit-citoyennete-et-diversite/",
-            start: 2017,            
+            start: 2017,
+            latitude: 48.853958,
+            longitude: 2.357206,           
         });
 		expect(testProjectMarker.render()).toBe('<div><h1>test</h1></div>');  
     });
