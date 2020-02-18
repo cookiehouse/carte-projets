@@ -3,12 +3,16 @@ import ProjectMap from './entities/ProjectMap';
 
 const projects: Project[] = [
   {
-    name: 'test',
+    name: 'test qui tuemmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmm',
     country: 'France',
-    type: 'Information',
+    type: 'Assistance',
     ref:
       'https://www.culture-developpement.asso.fr/accueil/conference-migration-et-cultures-droit-citoyennete-et-diversite/',
     start: 2017,
+    // end: 2018,
+    picture:
+      'https://www.culture-developpement.asso.fr/wp-content/uploads/2013/04/taxicouleurs-150x110.jpg',
+    location: 'Paris',
     latitude: 48.853958,
     longitude: 2.357206,
   },
@@ -19,6 +23,8 @@ const projects: Project[] = [
     ref:
       'https://www.culture-developpement.asso.fr/accueil/conference-migration-et-cultures-droit-citoyennete-et-diversite/',
     start: 2017,
+    end: 2019,
+    location: 'Paris',
     latitude: 48.453958,
     longitude: 2.557206,
   },
@@ -38,6 +44,7 @@ projectMap
     'OpenTopoMap',
     'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
     'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
-  );
+  )
+  .selectLayer('OpenStreetMap');
 
 export default projectMap;
