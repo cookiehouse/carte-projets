@@ -19,19 +19,20 @@ const projects: Project[] = [
     hds hqioh sdhbuzphnd hqoihdsen zeub  sqhuhsde uhsohnzs uhgsonns, sgsqoiujbz sbos.`,
   },
   {
-    name:
-      'PROGRAMME FRANCOPHONIE EN ACTIONS : La Culture, un capital à valoriser pour les régions et les villes de Côte d’Ivoire » 2018-2020',
+    name: 'PROGRAMME FRANCOPHONIE EN ACTIONS',
     country: 'France',
     type: 'Information',
     ref:
       'https://www.culture-developpement.asso.fr/accueil/conference-migration-et-cultures-droit-citoyennete-et-diversite/',
-    start: 2017,
-    end: 2019,
+    start: 2018,
+    end: 2020,
     picture:
       'https://www.culture-developpement.asso.fr/wp-content/uploads/2018/05/rapport-unesco-232x300.png',
     location: 'Paris',
     latitude: 48.453958,
     longitude: 2.557206,
+    summary:
+      'La Culture, un capital à valoriser pour les régions et les villes de Côte d’Ivoire.',
   },
 ];
 

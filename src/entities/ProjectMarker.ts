@@ -24,8 +24,7 @@ class ProjectMarker {
   }
   // Render the project pop up HTML element
   render(): string {
-    return `
-    <div class="base-wrapper ${this.project.type.toLowerCase()}-wrapper">
+    return `<div class="base-wrapper ${this.project.type.toLowerCase()}-wrapper">
       <div class="project-title">${this.project.name}</div>
       <div class = project-head-center >
         <div class="project-type ${this.project.type.toLowerCase()}-wrapper">
@@ -40,7 +39,7 @@ class ProjectMarker {
             ${this.project.start} - ${this.getEnd()}
           </div>
         </div>
-          <a class="project-picture-wrapper  ${this.project.type.toLowerCase()}-wrapper" href="${
+          <a class="project-picture-wrapper ${this.project.type.toLowerCase()}-wrapper" href="${
       this.project.ref
     }">
             <img class="project-picture" src="${this.project.picture}">
@@ -50,10 +49,9 @@ class ProjectMarker {
         ${this.project.summary}
       </div>
       <div class="project-footer-center" >
-        <a class="project-ref"  href="${this.project.ref}"> En savoir plus </a>
+        <a class="project-ref" href="${this.project.ref}">En savoir plus</a>
       </div>
-    </div>
-    `;
+    </div>`;
   }
 
   // Create a leaflet marker object
