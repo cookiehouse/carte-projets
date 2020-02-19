@@ -26,20 +26,32 @@ class ProjectMarker {
   render(): string {
     return `
     <div class="base-wrapper ${this.project.type.toLowerCase()}-wrapper">
-    <div class="project-title">${this.project.name}</div>
-    <div class = project-head-center >
-      <div class="project-type">${this.project.type}</div>
-    </div>
-    <div class="project-infos">
-      <div class="project-details">
-        <div class="project-info">${this.project.country}</div>
-        <div class="project-info">${this.project.location}</div>
-        <div class="project-info">${this.project.start} - ${this.getEnd()}</div>
+      <div class="project-title">${this.project.name}</div>
+      <div class = project-head-center >
+        <div class="project-type ${this.project.type.toLowerCase()}-wrapper">
+          ${this.project.type}
+        </div>
       </div>
-        <a class="project-picture-wrapper" href="${this.project.ref}">
-          <img class="project-picture" src="${this.project.picture}">
-        </a>
-    </div>
+      <div class="project-infos">
+        <div class="project-details">
+          <div class="project-info">${this.project.country}</div>
+          <div class="project-info">${this.project.location}</div>
+          <div class="project-info">
+            ${this.project.start} - ${this.getEnd()}
+          </div>
+        </div>
+          <a class="project-picture-wrapper  ${this.project.type.toLowerCase()}-wrapper" href="${
+      this.project.ref
+    }">
+            <img class="project-picture" src="${this.project.picture}">
+          </a>
+      </div>
+      <div class="project-synthese  ${this.project.type.toLowerCase()}-wrapper">
+        ${this.project.summary}
+      </div>
+      <div class="project-footer-center" >
+        <a class="project-ref"  href="${this.project.ref}"> En savoir plus </a>
+      </div>
     </div>
     `;
   }
