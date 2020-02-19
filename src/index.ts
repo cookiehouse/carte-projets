@@ -3,7 +3,7 @@ import ProjectMap from './entities/ProjectMap';
 
 const projects: Project[] = [
   {
-    name: 'test qui tuemmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmm',
+    name: 'test qui tuemmmmmmmmm mmmmmmmmm mmmmmmmmmmm mmmmmmmm',
     country: 'France',
     type: 'Assistance',
     ref:
