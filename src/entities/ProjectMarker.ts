@@ -46,7 +46,7 @@ class ProjectMarker {
             <img class="project-picture" src="${this.project.picture}">
           </a>
       </div>
-      <div class="project-synthese  ${this.project.type.toLowerCase()}-wrapper">
+      <div class="project-summary  ${this.project.type.toLowerCase()}-wrapper">
         ${this.project.summary}
       </div>
       <div class="project-footer-center" >

@@ -11,7 +11,7 @@ const projects: Project[] = [
     start: 2017,
     // end: 2018,
     picture: 'https://wallpaperaccess.com/full/783262.jpg',
-    location: 'Paris',
+    location: 'Paris ougadougou',
     latitude: 48.853958,
     longitude: 2.357206,
     summary: `Ce projet sert a nous donner une idée de comment fonctionne la zone synthese de la pop-up.
