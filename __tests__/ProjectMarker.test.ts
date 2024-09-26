@@ -30,6 +30,9 @@ describe('ProjectMarker test', () => {
       latitude: 48.853958,
       longitude: 2.357206,
     });
-    expect(testProjectMarker.render()).toBe('<div><h1>test</h1></div>');
+    expect(testProjectMarker.render()).toBe(`
+    <div class="title">test</div>
+    <div class="coords">48.853958</div>
+    `);
   });
 });

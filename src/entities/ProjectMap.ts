@@ -19,7 +19,7 @@ class ProjectMap {
     public maxZoom: number = 19,
     public minZoom: number = 3,
     public defaultTileName: string = 'OpenStreetMap',
-    public defaultTile: string = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+    public defaultTile: string = 'http://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png',
     public defaultAttribution: string = '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
   ) {
     // Copy projects
@@ -91,6 +91,13 @@ class ProjectMap {
     // Remove a Tile layer from the map by its given name during creation
     this.controlLayers.removeLayer(this.tileLayers[name]);
     delete this.tileLayers[name];
+    return this;
+  }
+
+  selectLayer(name: string): ProjectMap {
+    // Change selected layer
+    // This function works well and shows that we can easily inplement our own controller
+    this.map.addLayer(this.tileLayers[name]);
     return this;
   }
 }
